@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-IN" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    
+    <!-- Primary SEO -->
+    <title>ZEROCOMM | Zero Commission Restaurant Ordering System & Agency</title>
+    <meta name="title" content="ZEROCOMM | Zero Commission Restaurant Ordering System & Agency">
+    <meta name="description" content="Stop paying 30% commissions. ZeroComm helps Indian restaurants build direct ordering systems, own customer data, and keep 100% profit.">
+    
+    <!-- Performance: DNS Prefetching -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com" />
+    <link rel="dns-prefetch" href="https://www.youtube.com" />
+    <link rel="dns-prefetch" href="https://i.ytimg.com" />
+    
+    <!-- Performance: Critical Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin />
+    <link rel="preconnect" href="https://i.ytimg.com" crossorigin />
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zerocomm.in/">
+    <meta property="og:title" content="ZEROCOMM | Zero Commission Restaurant System">
+    <meta property="og:description" content="Stop paying 30% commissions. Build your own infrastructure with ZeroComm.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200&auto=format&fit=crop">
+
+    <!-- Fonts: Optimized Loading (Swap) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Roboto+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ff4400",
+              "background-light": "#f8f6f5",
+              "background-dark": "#050505",
+              "surface-dark": "#0f0f0f",
+              "border-dark": "#262626",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+              mono: ["Roboto Mono", "monospace"],
+            },
+            animation: {
+              blink: "blinker 1.5s linear infinite",
+              marquee: "marquee 30s linear infinite",
+              shine: "shine 4s linear infinite",
+              // Performance: FASTER Animations (0.8s -> 0.6s) for Snappy Feel
+              'fade-up': 'fadeUp 0.6s ease-out forwards',
+              'fade-up-delay-1': 'fadeUp 0.6s ease-out 0.1s forwards',
+              'fade-up-delay-2': 'fadeUp 0.6s ease-out 0.2s forwards',
+              'fade-up-delay-3': 'fadeUp 0.6s ease-out 0.3s forwards',
+            },
+            keyframes: {
+              blinker: {
+                "50%": { opacity: 0 },
+              },
+              marquee: {
+                "0%": { transform: "translate3d(0, 0, 0)" },
+                "100%": { transform: "translate3d(-50%, 0, 0)" },
+              },
+              shine: {
+                "0%": { backgroundPosition: "200% center" },
+                "100%": { backgroundPosition: "-200% center" },
+              },
+              // CSS Keyframes for instant loading (No JS wait)
+              fadeUp: {
+                "0%": { opacity: 0, transform: "translateY(15px)" },
+                "100%": { opacity: 1, transform: "translateY(0)" },
+              }
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 5rem; 
+      }
+      body {
+        background-color: #050505;
+        color: white;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        -webkit-tap-highlight-color: transparent;
+        margin: 0;
+      }
+      /* Performance: GPU Acceleration */
+      .animate-shine, .animate-marquee {
+        will-change: transform, background-position;
+        transform: translateZ(0);
+      }
+      /* Initial Critical CSS to prevent FOUC */
+      .opacity-0-start { opacity: 0; }
+      
+      input[type="range"] {
+        -webkit-appearance: none;
+        width: 100%;
+        background: transparent;
+      }
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 20px;
+        width: 20px;
+        background: #ff4400;
+        cursor: pointer;
+        border-radius: 0px;
+        margin-top: -9px;
+        border: 1px solid white;
+      }
+      input[type="range"]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 2px;
+        cursor: pointer;
+        background: #333;
+      }
+      .bg-grid-overlay {
+        background-size: 50px 50px;
+        background-image: linear-gradient(to right, #222 1px, transparent 1px),
+          linear-gradient(to bottom, #222 1px, transparent 1px);
+        mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+        -webkit-mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+        content-visibility: auto; 
+      }
+      /* Pre-loader Animation */
+      @keyframes pulse-fast {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root">
+      <!-- INSTANT LOADER SHELL: Shows immediately while React boots up -->
+      <div style="height: 100vh; width: 100vw; background-color: #050505; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #333; position: fixed; top: 0; left: 0; z-index: 9999;">
+        <div style="font-family: monospace; font-size: 12px; letter-spacing: 0.3em; color: #ff4400; text-transform: uppercase; animation: pulse-fast 1s infinite;">
+          ZEROCOMM TERMINAL...
+        </div>
+        <div style="margin-top: 10px; width: 100px; height: 1px; background: #262626; overflow: hidden;">
+           <div style="width: 50%; height: 100%; background: #ff4400; animation: marquee 1s infinite linear;"></div>
+        </div>
+      </div>
+    </div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
